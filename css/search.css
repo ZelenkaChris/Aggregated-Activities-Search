@@ -1,0 +1,107 @@
+body {
+    padding-top: 50px;
+}
+
+h1 { text-align: center; }
+
+.dropdown.dropdown-lg .dropdown-menu {
+    margin-top: -1px;
+    padding: 6px 20px;
+}
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+.btn-group .btn {
+    border-radius: 0;
+    margin-left: -1px;
+}
+.btn-group .btn:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.btn-group .form-horizontal .btn[type="submit"] {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+    margin-right: 0;
+}
+.form-group .form-control:last-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    #adv-search {
+        width: 500px;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .dropdown.dropdown-lg .dropdown-menu {
+        min-width: 500px;
+    }
+	
+	#custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+		width: 68%;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+		width: 400px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+		outline: none;
+		padding: 3px 0px 3px 3px;
+		margin: 5px 1px 3px 0px;
+		border: 1px solid #DDDDDD;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }   
+	.search-query:hover{
+		width: 400px;
+		box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		padding: 3px 0px 3px 3px;
+		margin: 5px 1px 3px 0px;
+		border: 1px solid rgba(81, 203, 238, 1);
+	}
+	
+    .search-query:focus{
+        width: 400px;
+		box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+		padding: 3px 0px 3px 3px;
+		margin: 5px 1px 3px 0px;
+		border: 1px solid rgba(81, 203, 238, 1);
+    }   
